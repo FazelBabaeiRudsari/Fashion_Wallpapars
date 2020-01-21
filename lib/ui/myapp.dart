@@ -250,7 +250,7 @@ class _MyAppState extends State<MyApp> {
             children: <Widget>[
               Container(
                 child: CircleAvatar(
-                  backgroundImage: AssetImage("images/home.ico"),
+                  backgroundImage: AssetImage("images/4.jpg"),
                   backgroundColor: Colors.black,
                 ),
                 padding: const EdgeInsets.all(3.0),
@@ -269,7 +269,7 @@ class _MyAppState extends State<MyApp> {
             children: <Widget>[
               Container(
                 child: CircleAvatar(
-                  backgroundImage: AssetImage("images/4.jpg"),
+                  backgroundImage: AssetImage("images/best.ico"),
                   backgroundColor: Colors.black,
                 ),
                 padding: const EdgeInsets.all(3.0),
