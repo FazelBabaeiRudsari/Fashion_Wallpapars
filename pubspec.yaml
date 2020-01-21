@@ -24,7 +24,6 @@ dependencies:
   flutter:
     sdk: flutter
 
-
   shared_preferences: any # 0.5.6
   #  image_picker_saver: any
   #  image_picker: any
@@ -52,7 +51,16 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
+#  flutter_native_splash: ^0.1.9
+
   flutter_launcher_icons: any
+
+#flutter_native_splash:
+#  image: "images/icon.png"
+#  color: "42a5f5"
+#  fill: true
+
+
 flutter_icons:
   android: true
   ios: true
