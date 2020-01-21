@@ -103,7 +103,7 @@ class _DashboardState extends State<Dashboard>
             scrollDirection: Axis.vertical,
             physics: ClampingScrollPhysics(),
             child: Container(
-              padding: const EdgeInsets.only(left: 16, right: 16, top: 20),
+              padding: const EdgeInsets.all(16.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[

@@ -174,7 +174,7 @@ class _MyAppState extends State<MyApp> {
             children: <Widget>[
               Container(
                   child: CircleAvatar(
-                    backgroundImage: AssetImage("images/woman.ico"),
+                    backgroundImage: AssetImage("images/1.jpg"),
                     backgroundColor: Colors.black,
                   ),
                   padding: EdgeInsets.all(3.0),
@@ -204,7 +204,7 @@ class _MyAppState extends State<MyApp> {
               Container(
                   child: CircleAvatar(
 //                        radius: 30.0,
-                    backgroundImage: AssetImage("images/man.ico"),
+                    backgroundImage: AssetImage("images/2.jpg"),
                     backgroundColor: Colors.black,
                   ),
                   padding: EdgeInsets.all(3.0),
@@ -229,7 +229,7 @@ class _MyAppState extends State<MyApp> {
               Container(
                 child: CircleAvatar(
 //                          radius: 30.0,
-                  backgroundImage: AssetImage("images/baby.ico"),
+                  backgroundImage: AssetImage("images/3.jpg"),
                   backgroundColor: Colors.black,
                 ),
                 padding: const EdgeInsets.all(3.0),
@@ -267,20 +267,19 @@ class _MyAppState extends State<MyApp> {
         child: FittedBox(
           child: Column(
             children: <Widget>[
-              Icon(
-                Icons.favorite,
-                color: Colors.yellowAccent,
-              ),
-              FittedBox(
-                child: Text(
-                  "favorite",
-//                  style: TextStyle(color: Colors.yellowAccent, fontSize: 12.0),
+              Container(
+                child: CircleAvatar(
+                  backgroundImage: AssetImage("images/4.jpg"),
+                  backgroundColor: Colors.black,
                 ),
-                fit: BoxFit.fitHeight,
+                padding: const EdgeInsets.all(3.0),
+                decoration: BoxDecoration(
+                    color: Colors.yellowAccent, shape: BoxShape.circle),
               ),
+              Text("best"),
             ],
           ),
-          fit: BoxFit.fitHeight,
+          fit: BoxFit.cover,
         ),
       ),
     ],
@@ -340,13 +339,14 @@ class _MyAppState extends State<MyApp> {
 //            ],
 //          ),
 //        ),
-        appBar: AppBar(
-          backgroundColor: Colors.black,
-          bottom: PreferredSize(
-            preferredSize: Size.fromHeight(_tabBar.preferredSize.height - 50),
-            child: _tabBar,
-          ),
-        ),
+        appBar: _tabBar,
+//        AppBar(
+//          backgroundColor: Colors.black,
+//          bottom: PreferredSize(
+//            preferredSize: Size.fromHeight(_tabBar.preferredSize.height - 50),
+//            child: _tabBar,
+//          ),
+//        ),
         backgroundColor: Colors.black,
         body: BlocProvider<WallpaperBloc>(
             bloc: _bloc,
